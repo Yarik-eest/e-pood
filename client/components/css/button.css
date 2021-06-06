@@ -1,0 +1,97 @@
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main .buttonSort{
+  width:80px;
+  text-align:center;
+  justify-content: center;
+  font-family: arial;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  border: #1071FF 1px solid;
+  color: white;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  transition: .5s;
+  border-radius: 10px;
+  outline: none;
+}
+.main .buttonSortProduct:hover {
+  top: 5px;
+  transition: .5s;
+  color: #10FF58;
+  border: #10FF58 1px solid;
+  border-radius: 10px;
+}
+.main .buttonSort:hover {
+  box-shadow: 0 0 10px 0 #10FF58 inset, 0 0 10px 4px #10FF58;
+  color: #10FF58;
+}
+.main .buttonSort:active {
+  background: none;
+  color: red;
+  box-shadow: 0 0 10px 0 #ff1010 inset, 0 0 10px 4px #ff1010;
+}
+
+
+.main .buttonSortProduct{
+  width:80px;
+  text-align:center;
+  justify-content: center;
+  font-family: arial;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  border: #1071FF 1px solid;
+  color: white;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  transition: .5s;
+  border-radius: 0px;
+  outline: none;
+}
+.main .buttonSortProduct:hover {
+   box-shadow: 0 0 10px 0 #10FF58 inset, 0 0 10px 4px #10FF58;
+  color: #10FF58;
+}
+.main .buttonSortProduct:active {
+  background: none;
+  box-shadow: 0 0 10px 0 #ff1010 inset, 0 0 10px 4px #ff1010;
+   color: red;
+}
+
+.main .buttonBusket{
+  width:80px;
+  text-align:center;
+  justify-content: center;
+  font-family: arial;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  border: #1071FF 1px solid;
+  color: white;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  transition: .5s;
+  border-radius: 10px;
+  outline: none;
+}
+.main .buttonBusket:hover {
+ box-shadow: 0 0 10px 0 #10FF58 inset, 0 0 10px 4px #10FF58;
+  color: #10FF58;
+}
+.main .buttonBusket:active {
+   background: none;
+  box-shadow: 0 0 10px 0 #ff1010 inset, 0 0 10px 4px #ff1010;
+   color: red;
+}

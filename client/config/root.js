@@ -10,6 +10,7 @@ import NotFound from '../components/404'
 import Main from '../components/main'
 import Basket from '../components/basket'
 import Logs from '../components/log'
+import About from '../components/about'
 
 import Startup from './startup'
 
@@ -53,6 +54,7 @@ const RootComponent = (props) => {
             <Route exact path="/" component={Main} />
             <Route exact path="/basket" component={Basket} />
             <Route exact path="/logs" component={Logs} />
+            <Route exact path="/about" component={About} />
             <PrivateRoute exact path="/hidden-route" component={DummyView} />
             <OnlyAnonymousRoute exact path="/anonymous-route" component={DummyView} />
             <Route component={NotFound} />

@@ -1,14 +1,11 @@
 import React from 'react'
 
 import { history } from '../redux'
+import './css/button.css'
 
 const LogButton = () => {
   return (
-    <button
-      type="button"
-      className="border p-1"
-      onClick={() => history.push('/logs')}
-    >
+    <button type="button" className="buttonSort" onClick={() => history.push('/logs')}>
       Log
     </button>
   )

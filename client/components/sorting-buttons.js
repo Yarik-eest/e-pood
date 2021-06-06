@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { sortProducts } from '../redux/reducers/products'
+import './css/button.css'
 
 const SortingButtons = () => {
   const dispatch = useDispatch()
@@ -19,11 +20,11 @@ const SortingButtons = () => {
   }
 
   return (
-    <div>
+    <div className="main">
       <button
         type="button"
         id="sort-price"
-        className="border p-1"
+        className="buttonSortProduct"
         onClick={() => sortIt('price')}
       >
         Sort by price
@@ -31,7 +32,7 @@ const SortingButtons = () => {
       <button
         type="button"
         id="sort-name"
-        className="border p-1"
+        className="buttonSortProduct"
         onClick={() => sortIt('title')}
       >
         Sort by name

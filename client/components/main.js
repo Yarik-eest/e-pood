@@ -5,6 +5,8 @@ import Head from './head'
 import Header from './header'
 import Product from './product'
 import { getProductsFromServer, addRates } from '../redux/reducers/products'
+import './css/navbar.css'
+
 
 const Main = () => {
   const dispatch = useDispatch()
@@ -16,7 +18,7 @@ const Main = () => {
   }, [])
 /*
 array = [{ id: 10, title: 'Pepe' }, { id: 'hi', title: 'Marina' }]
-object = { 
+object = {
   '10': { id: 10, title: 'Pepe' },
   'hi': { id: 'hi', title: 'Marina' }
 }
@@ -26,7 +28,7 @@ object = {
 ]
 */
   return (
-    <div className="h-full">
+    <div className="app">
       <Head title="Hello" />
       <Header />
       <div className="flex flex-wrap h-screen">
