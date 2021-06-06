@@ -54,6 +54,8 @@ const RootComponent = (props) => {
             <Route exact path="/" component={Main} />
             <Route exact path="/basket" component={Basket} />
             <Route exact path="/logs" component={Logs} />
+            <Route exact path="/contact" component={DummyView} />
+            <Route exact path="/feedback" component={DummyView} />
             <Route exact path="/about" component={About} />
             <PrivateRoute exact path="/hidden-route" component={DummyView} />
             <OnlyAnonymousRoute exact path="/anonymous-route" component={DummyView} />

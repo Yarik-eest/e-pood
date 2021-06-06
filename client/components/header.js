@@ -1,24 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import ReorderIcon from '@material-ui/icons/Reorder'
 import CurrencyButtons from './currency-buttons'
 import SortingButtons from './sorting-buttons'
 import BasketButton from './basket-button'
 import LogButton from './log-button'
 import './css/navbar.css'
 
+
 const Header = () => {
+  const [ showLinks, setShowLinks] = useState(false)
   return (
     <div className="main">
       <div className="leftSide">
-        <div className="links">
+        <div className="links" id={showLinks ? 'hidden' : ''}>
           <Link to="/" id="brand-name" className="blueButton">
             Shop
+          </Link>
+          <Link to="/contact" id="brand-name" className="blueButton">
+            Contact
+          </Link>
+          <Link to="/feedback" id="brand-name" className="blueButton">
+            Feedback
           </Link>
           <Link to="/about" id="brand-name" className="blueButton">
             About
           </Link>
         </div>
+        <button onClick={() => setShowLinks(!showLinks)} type="button" id="menu">
+          <ReorderIcon />
+        </button>
       </div>
 
       <div className="rightSide">
