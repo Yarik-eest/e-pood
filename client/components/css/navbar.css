@@ -9,14 +9,14 @@
 
 .main .leftSide {
   margin-left: 5px;
-  flex: 50%;
+  flex: 40%;
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
 .main .rightSide {
-  flex: 50%;
+  flex: 60%;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -73,6 +73,14 @@
 }
 
 @media only screen and (max-width: 950px) {
+  .main .leftSide {
+    flex: 15%
+  }
+
+  .main .rightSide {
+    flex: 85%
+  }
+
   .main .leftSide button {
     display: flex;
   }

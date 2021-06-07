@@ -17,8 +17,9 @@ const Basket = () => {
       <Head title="Basket" />
       <Header />
       <div className="flex flex-col items-center w-full h-screen p-2">
-        {Object
-          .values(basketList)
+        <div>Total amount: {totalAmount}</div>
+        <div>Total price: {(totalPrice * currentRate[currency].toFixed(2)).toFixed(2)}</div>
+        {Object.values(basketList)
           .filter((good) => typeof basketList[good.id] !== 'undefined')
           .sort((a, b) => {
             if (type === 'price' && direction === 'a-z') {
@@ -41,10 +42,7 @@ const Basket = () => {
                 <BasketProduct item={{ id: item.id, amount: item.amount }} />
               </div>
             )
-          })
-        }
-        <div>Total amount: {totalAmount}</div>
-        <div>Total price: {(totalPrice * currentRate[currency].toFixed(2)).toFixed(2)}</div>
+          })}
       </div>
     </div>
   )

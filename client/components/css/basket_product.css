@@ -1,0 +1,66 @@
+.cardBasket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: lightgray;
+  background: rgb(247, 241, 233);
+  width: 100vw;
+  height: 200px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 10pt;
+   float: left;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .cardBasket .image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+  }
+
+  .cardBasket .title{
+    font-size: 12px;
+    display: block;
+  }
+
+ .cardBasket .button1 {
+  display: inline-block;
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+  user-select: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+.cardBasket .button1:before {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;  /* для больших картинок 0 */
+  padding-right: 5px;
+}
+
+.cardBasket .button1:hover {
+  background: linear-gradient(#ececeb, #eaeaea);
+  box-shadow:
+   inset rgba(0,0,0,.5) 0 -1px 1px,
+   inset rgba(0,0,0,.2) 0 1px,
+   inset #fff 0 2px,
+   rgba(0,0,0,.2) 0 1px 1px;
+}
+.cardBasket .button1:active {
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.1));
+  box-shadow:
+   inset rgba(0,0,0,.8) 0 1px 2px,
+   inset rgba(0,0,0,.05) 0 -1px 0,
+   #fff 0 1px 1px;
+}
