@@ -6,13 +6,7 @@ const SET_CURRENCYNAME = 'store/products/SET_CURRENCYNAME'
 const SET_SORT_TYPE = 'store/products/SET_SORT_TYPE'
 
 const initialState = {
-  goods: {
-    // 'id': {
-    //   id: '384u9014',
-    //   title: 'Beer',
-    //   price: 10
-    // }
-  },
+  goods: {},
   rates: {
     USD: 1
   },
@@ -23,12 +17,22 @@ const initialState = {
   }
 }
 
+/* const getImage = (products) => {
+  return products.map((item) => ({
+    ...item,
+    image: `https://source.unsplash.com/800x600/?${/\w+(?=\s)/gi.exec(item.title)}`
+  }))
+} */
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case GET_PRODUCTS: {
       return {
         ...state,
         goods: action.listOfGoods
+       /* ...state,
+        goods: getImage(action.data),
+        goodsTimeout: +new Date() */
       }
     }
     case ADD_RATES: {

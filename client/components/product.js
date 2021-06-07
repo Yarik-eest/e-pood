@@ -11,7 +11,11 @@ const Product = (props) => {
 
   return (
     <div className="card">
-      <img className="image" alt={props.good.title} src={props.good.image} />
+      <img
+        className="image"
+        alt={props.good.title}
+        src={`https://source.unsplash.com/800x600/?${/\w+(?=\s)/gi.exec(props.good.title)}`}
+      />
       <div className="title">
         {(props.good.price * currentRate[currency].toFixed(2)).toFixed(2)} {currency}
       </div>
@@ -19,15 +23,14 @@ const Product = (props) => {
       <div className="title">{props.good.title}</div>
       <div className="title">{props.good.description}</div>
 
-        <div className="title">{amount}</div>
-        <button
-          className="buttonBuy"
-          type="button"
-          onClick={() => dispatch(addToBasket(props.good.id))}
-        >
-          Buy
-        </button>
-
+      <button
+        className="buttonBuy"
+        type="button"
+        onClick={() => dispatch(addToBasket(props.good.id))}
+      >
+        Buy
+      </button>
+      <div className="title">Ordered: {amount} pcs.</div>
     </div>
   )
 }
