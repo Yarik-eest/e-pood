@@ -10,9 +10,18 @@ const CurrencyButtons = () => {
   }
   return (
     <div className="main">
-      <button type="button" className="buttonSort" onClick={(e) => onClick(e)}>USD</button>
-      <button type="button" className="buttonSort" onClick={(e) => onClick(e)}>EUR</button>
-      <button type="button" className="buttonSort" onClick={(e) => onClick(e)}>CAD</button>
+
+      <div>
+        <button type="button" className="buttonSort" onClick={(e) => onClick(e)}>
+          USD
+        </button>
+        <button type="button" className="buttonSort" onClick={(e) => onClick(e)}>
+          EUR
+        </button>
+        <button type="button" className="buttonSort" onClick={(e) => onClick(e)}>
+          CAD
+        </button>
+      </div>
     </div>
   )
 }

@@ -4,6 +4,31 @@
   align-items: center;
 }
 
+.mainCurrency {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.mainCurrency:hover .dropDown {
+  display:block;
+}
+
+.mainCurrency .dropDown {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #1071FF;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 200px;
+  cursor: pointer;
+}
+
 .main .buttonSort{
   width:50px;
   text-align:center;

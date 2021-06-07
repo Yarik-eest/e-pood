@@ -5,7 +5,7 @@ import Head from './head'
 import Header from './header'
 import Product from './product'
 import { getProductsFromServer, addRates } from '../redux/reducers/products'
-import './css/navbar.css'
+import './css/app.css'
 
 
 const Main = () => {
@@ -28,14 +28,16 @@ object = {
 ]
 */
   return (
-    <div className="app">
+    <div className="">
       <Head title="Hello" />
       <Header />
-      <div className="flex flex-wrap h-screen">
+      <div className="app">
         {Object.entries(listOfGoods).map((good) => {
-          return (<div key={good[0]}>
-            <Product good={good[1]} />
-          </div>)
+          return (
+            <div key={good[0]}>
+              <Product good={good[1]} />
+            </div>
+          )
         })}
       </div>
     </div>
