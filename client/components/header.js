@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ReorderIcon from '@material-ui/icons/Reorder'
 import CurrencyButtons from './currency-buttons'
 import SortingButtons from './sorting-buttons'
 import BasketButton from './basket-button'
@@ -28,7 +27,7 @@ const Header = () => {
           </Link>
         </div>
         <button onClick={() => setShowLinks(!showLinks)} type="button" id="menu">
-          <ReorderIcon />
+          menu
         </button>
       </div>
 
