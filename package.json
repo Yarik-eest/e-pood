@@ -3,7 +3,7 @@
     "version": "0.0.2",
     "description": "Boilerplate SkillCrucial",
     "main": "index.js",
-    "scripts": {
+        "scripts": {
         "docker-start-dev": "docker-compose -f \"docker\\DEV.docker-compose.yml\" up",
         "docker-stop-dev": "docker-compose -f \"docker\\DEV.docker-compose.yml\" down",
         "dev": "yarn run watch:server & yarn run watch:client ",
