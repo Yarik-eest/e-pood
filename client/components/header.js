@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import CurrencyButtons from './currency-buttons'
+import CurrencyButtons from './currency-button'
 import SortingButtons from './sorting-buttons'
 import BasketButton from './basket-button'
 import LogButton from './log-button'

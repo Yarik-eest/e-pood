@@ -2,8 +2,8 @@
   list-style-type: none;
   display: inline-block;
   position: relative;
-  background: darkmagenta;
-  padding: 10px 15px;
+  background: #1071FF;
+  padding: 17px;
 }
 
 .root:hover .dropdown {
@@ -13,10 +13,11 @@
 .dropdown {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 43px;
   left: 0px;
-  background: aqua;
-  padding: 10px;
+  background: #1071FF;
+  padding: 5px;
+
   box-sizing: border-box;
   width: 100%;
 }
@@ -24,8 +25,41 @@
 .dropdown > li {
   cursor: pointer;
   list-style: none;
+  margin-right: 10px;
+
 }
 
 .dropdown > li:hover {
   color: aliceblue;
+}
+
+.dropdown > li .buttonSort {
+ width:50px;
+  text-align:center;
+  justify-content: center;
+  font-family: arial;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  border: #1071FF 1px solid;
+  color: white;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 5px;
+  transition: .5s;
+  border-radius: 10px;
+  outline: none;
+}
+.dropdown > li .buttonSort:hover {
+  top: 5px;
+  transition: .2s;
+  color: #10FF58;
+  border: #10FF58 1px solid;
+  border-radius: 10px;
+}
+.dropdown > li .buttonSort:active {
+  background: none;
+  color: red;
+  box-shadow: 0 0 10px 0 #ff1010 inset, 0 0 10px 4px #ff1010;
 }
