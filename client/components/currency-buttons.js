@@ -10,7 +10,6 @@ const CurrencyButtons = () => {
   }
   return (
     <div className="main">
-
       <div>
         <button type="button" className="buttonSort" onClick={(e) => onClick(e)}>
           USD
@@ -29,5 +28,3 @@ const CurrencyButtons = () => {
 CurrencyButtons.propTypes = {}
 
 export default React.memo(CurrencyButtons)
-
-
