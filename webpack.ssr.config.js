@@ -24,10 +24,12 @@ const config = {
     minimizer: [
       new TerserJSPlugin({ parallel: true }),
       new OptimizeCSSAssetsPlugin({
+        assetNameRegExp: /\.optimize\.css$/g,
         cssProcessor: require('cssnano'),
         cssProcessorPluginOptions: {
           preset: ['default', { discardComments: { removeAll: true } }]
-        }
+        },
+        canPrint:true
       })
     ]
   },
@@ -38,7 +40,6 @@ const config = {
   },
   externals: [nodeExternals()],
   resolve: {
-
     alias: {
       d3: 'd3/index.js',
       './setPrototypeOf': './setPrototypeOf.js',
